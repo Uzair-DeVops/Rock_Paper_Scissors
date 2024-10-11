@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock_Paper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 align="center" class="mb-[100px] text-6xl text-blue-800">Rock Paper Scissors</h1>
+    <div id="con" class="flex justify-center items-center max-w-9xl mt-auto mx-auto border-2 ">
+      <!-- Left set of images -->
+      <div class="relative mr-4" style="width: 200px; height: 290px;">
+        <span>Computer Choice</span>
+        <img src="page.jpg" class="absolute w-[200px] h-[200px] two" alt="Page">
+        <img src="rock.jpg" class="absolute w-[200px] h-[200px] two" alt="Rock">
+        <img src="scissor.jpg" class="absolute w-[200px] h-[200px] two" alt="Scissor">
+      </div>
+      <!-- Right set of images -->
+      <button id="btn" class="mt-4 px-5 py-5 bg-blue-500 text-white mx-auto text-xl ">Play</button>
+
+      <div class="relative  ml-4" style="width: 200px; height: 290px;">
+        <span>Your Choice</span>
+
+        <img src="page.jpg" class="absolute w-[200px] h-[200px] one " alt="Page">
+        <img src="rock.jpg" class="absolute w-[200px] h-[200px] one" alt="Rock">
+        <img src="scissor.jpg" class="absolute w-[200px] h-[200px] one" alt="Scissor">
+      </div>
+    </div>
+
+    <!-- Button to trigger z-index change -->
+<div class="flex justify-center">
+    <button id="btn2" class="mt-4 px-4 py-2 bg-blue-500 text-white mx-auto   " onclick="append('0')">Press 0 for Paper</button>
+    <button id="btn3" class="mt-4 px-4 py-2 bg-blue-500 text-white mx-auto "  onclick="append('1')">Press 1 for Rock</button>
+    <button id="btn4" class="mt-4 px-4 py-2 bg-blue-500 text-white mx-auto "  onclick="append('2')">Press 2 for Scissors</button>
+</div>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
